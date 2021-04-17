@@ -1,4 +1,4 @@
-export class Course {
+export default class Course {
     id: number | undefined;
     name: string | undefined;
     imageUrl: string | undefined;
@@ -7,4 +7,5 @@ export class Course {
     duration: number | undefined;
     rating: number = 0;
     releaseDate: string | undefined;
+    description: string | undefined;
 }
