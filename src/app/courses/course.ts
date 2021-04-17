@@ -5,6 +5,6 @@ export class Course {
     price: number | undefined;
     code: string | undefined;
     duration: number | undefined;
-    rating: number | undefined;
+    rating: number = 0;
     releaseDate: string | undefined;
 }
