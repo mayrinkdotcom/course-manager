@@ -9,6 +9,11 @@ export class CourseService {
         return COURSES;
     }
 
+    retrieveById(id: number): Course {
+        var returnParam = COURSES.find((courseIterator: Course) => courseIterator.id === id);
+        return (returnParam == undefined)? new Course : returnParam ;
+    }
+
 }
 
 var COURSES: Course[] = [
